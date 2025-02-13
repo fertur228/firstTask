@@ -15,6 +15,19 @@ public class Main {
         car.drive();
         car.drive();
 
+
+
+        // Получаем бин BookingService из контекста
+        BookingService bookingService = context.getBean(BookingService.class);
+
+        // Пробуем забронировать комнату с ID 2
+        bookingService.bookRoom(2); // Успешная бронь
+
+        // Пробуем снова забронировать ту же комнату
+        bookingService.bookRoom(2); // Комната уже занята
+
+        // Пробуем забронировать комнату с несуществующим ID
+        bookingService.bookRoom(4); // Комната не существует
         context.close();
     }
 }
