@@ -13,7 +13,7 @@ public class Main {
         car.drive();
         car.drive();
         car.drive();
-        car.drive(); // После 5 поездок топлива не останется!
+        car.drive();
 
         context.close();
     }
