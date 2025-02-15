@@ -21,9 +21,9 @@ public class Car {
             engine.start();
             transmission.shiftGear();
             fuelTank.useFuel();
-            System.out.println("Машина поехала!\n");
+            System.out.println("Машина поехала!");
         } else {
-            System.out.println("Машина не может ехать без топлива!\n");
+            System.out.println("Машина не может ехать без топлива!");
         }
     }
 }
