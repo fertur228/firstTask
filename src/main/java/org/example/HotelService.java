@@ -10,9 +10,9 @@ public class HotelService {
 
     public HotelService() {
         rooms = new ArrayList<>();
-        rooms.add(new Room(1, "Single"));
-        rooms.add(new Room(2, "Double"));
-        rooms.add(new Room(3, "Suite"));
+        rooms.add(new Room(1, "Однокомнатная"));
+        rooms.add(new Room(2, "Двух-комнатная"));
+        rooms.add(new Room(3, "Президентский люкс"));
     }
 
     public Room getRoomById(int id) {
