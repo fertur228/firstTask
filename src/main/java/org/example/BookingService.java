@@ -23,7 +23,7 @@ public class BookingService {
                 System.out.println("Комната " + room.id + " (" + room.type + ") была уже забронирована.");
             }
         } else {
-            System.out.println("Комната с таким номером " + roomId + " не существует");
+            System.out.println("Комната с номером " + roomId + " не существует");
         }
     }
 }
