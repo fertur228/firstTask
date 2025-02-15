@@ -8,11 +8,11 @@ public class Room {
     public Room(int id, String type) {
         this.id = id;
         this.type = type;
-        this.isAvailable = true; // Комната доступна по умолчанию
+        this.isAvailable = true;
     }
 
     public void book() {
-        this.isAvailable = false; // Меняем состояние на "занята"
+        this.isAvailable = false; //занята
     }
 }
 

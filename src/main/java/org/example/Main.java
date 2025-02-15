@@ -25,6 +25,6 @@ public class Main {
         bookingService.bookRoom(4);
 
 
-        context.close();
+
     }
 }

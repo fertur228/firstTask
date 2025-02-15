@@ -8,7 +8,7 @@ public class BookingService {
 
     private final HotelService hotelService;
 
-    @Autowired // Это указывает, что Spring должен инжектить зависимость в конструктор
+    @Autowired
     public BookingService(HotelService hotelService) {
         this.hotelService = hotelService;
     }
@@ -18,12 +18,12 @@ public class BookingService {
         if (room != null) {
             if (room.isAvailable) {
                 room.book();
-                System.out.println("Room " + room.id + " (" + room.type + ") has been successfully booked.");
+                System.out.println("Комната " + room.id + " (" + room.type + ") успешно забронирована!");
             } else {
-                System.out.println("Room " + room.id + " (" + room.type + ") is already booked.");
+                System.out.println("Комната " + room.id + " (" + room.type + ") была уже забронирована.");
             }
         } else {
-            System.out.println("Room with ID " + roomId + " does not exist.");
+            System.out.println("Комната с таким номером " + roomId + " не существует");
         }
     }
 }
