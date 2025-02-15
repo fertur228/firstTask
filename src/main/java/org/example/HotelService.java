@@ -1,10 +1,10 @@
 package org.example;
+import org.springframework.stereotype.Service;
 
-import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Service
 public class HotelService {
     List<Room> rooms;
 
